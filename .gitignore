@@ -1,0 +1,46 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*
+
+# Build folders
+dist/
+build/
+
+# OS files (dot/system files)
+.DS_Store
+Thumbs.db
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Package lock (optional – keep if you want reproducible installs)
+# package-lock.json
+# yarn.lock
+
+# Coverage reports
+coverage/
+
+# Misc hidden files (dotfiles - be careful if you need some)
+.*
+
+# But allow important dotfiles
+!.gitignore
+!.env.example
+!.eslintrc*
+!.prettierrc*
