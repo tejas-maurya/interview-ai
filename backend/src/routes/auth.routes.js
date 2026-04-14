@@ -3,33 +3,25 @@ const authController=require("../constroller/auth.controller")
 const authRouter=Router();
 const authMiddleware=require("../middleware/auth.middleware")
 
-/**
- * @route Post /api/auth/register
- * @description resgister a user 
- * @access public
- * 
- */
-authRouter.post("/register",authController.registerUserController)
-/**
- * @route Post /api/auth/login
- * @description login user with email and passwor 
- * @access public 
- * 
- */
-authRouter.post("/login",authController.loginUserController)
 
 /**
- * @route post /api/auth/logout
- * @description clear token from user cookie and add the token in blacklist 
- * @access public
- *
+ * @route POST /api/auth/register
  */
-authRouter.get("/logout",authController.logoutUserController)
+authRouter.post("/register", authController.registerUserController);
 
 /**
- * @route DET /api/auth/get-me
- * @description get the current logged in user detail 
- * @access private 
+ * @route POST /api/auth/login
  */
-authRouter.get ("get-me",authMiddleware.authUser,authController.getMeController)
-module.exports=authRouter
+authRouter.post("/login", authController.loginUserController);
+
+/**
+ * @route GET /api/auth/logout
+ */
+authRouter.get("/logout", authController.logoutUserController);
+
+/**
+ * @route GET /api/auth/get-me
+ */
+authRouter.get("/get-me", authMiddleware.authUser, authController.getMeController);
+
+module.exports = authRouter;
