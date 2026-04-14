@@ -1,16 +1,23 @@
 .button {
-
   padding-inline: 1.5rem;
   border: none;
   cursor: pointer;
   padding-block: 0.75rem;
   border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
 
- }
+  &.primary-button {
+    background-color: blue;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+  }
 
-.primary-button {
-  background-color: blue;
-  color: white;
-  width: 100%;
-  margin-top: 10px;
+  &:hover {
+    transform: scale(1.05);   // 👈 hover effect
+  }
+
+  &:active {
+    transform: scale(0.95);   // 👈 click effect
+  }
 }
