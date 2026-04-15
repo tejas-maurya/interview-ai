@@ -5,6 +5,7 @@ const PORT=3000|| 4000;
 
 const connectDB = require('./config/database');
 connectDB();
+// Test the AI service
 // main()
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
