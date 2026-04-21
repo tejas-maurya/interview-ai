@@ -48,7 +48,7 @@ Fast learner
 Team collaboration`;
 const selfDescription=`I am a Computer Science student with hands-on experience in full-stack web development using the MERN stack. I enjoy designing efficient backend systems, building responsive user interfaces, and solving challenging problems. I am currently exploring machine learning and actively participating in coding competitions.`
 const jobDescription=`💼 Job Title: Junior Software Developer
-📝 Job Description:
+
 
 We are looking for a passionate Junior Software Developer to join our team. The candidate will be responsible for developing, testing, and maintaining web applications.
 
